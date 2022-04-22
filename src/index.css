@@ -1,13 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(213, 211, 211);
+}
+.App {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px 2px grey;
+}
+.display {
+    padding: 16px;
+    text-align: right;
+    background-color: rgb(91, 90, 90);
+    color: white;
+    font-size: 24px;
+    font-weight: 100;
+}
+.display span {
+    font-size: 14px;
+    color: #888;
+}
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button:hover {
+    opacity: 0.7;
+}
+.operators {
+    display: flex;
+    flex-direction: column;
+}
+.operators button {
+    flex: 1 1 0%;
+    background-color: orange;
+    font-weight: 700;
+}
+.digits {
+    display: flex;
+    flex-wrap: wrap;
+}
+.digits button {
+    flex: 1 1 33.333%;
+    max-width: 33.333%;
+    background-color: black;
+}
+.container-op-digit {
+    display: flex;
 }
