@@ -11,7 +11,7 @@ function App() {
         if (
             (ops.includes(value) && calc === "") ||
             (ops.includes(value) && ops.includes(calc.slice(-1))) ||
-            (calc === "" && value == 0)
+            (calc === "" && value === "0")
         ) {
             return;
         }
